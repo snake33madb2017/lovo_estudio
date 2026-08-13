@@ -1144,7 +1144,6 @@ app.quiz = {
         if(selectedOption === this.currentQuestion.correctAnswer) {
             btn.classList.add('correct');
             this.score += 10;
-            if (cocktail) app.learning.recordSuccess(cocktail.id);
             document.getElementById('quiz-score-text').textContent = this.score;
             feedback.textContent = "¡Correcto! +10 pts";
             feedback.classList.add('correct');
@@ -1690,7 +1689,7 @@ app.rush = {
             btnElement.style.borderColor = '#28a745';
             this.timeLeft += 3;
             this.score++;
-            app.learning.recordSuccess(this.targetCocktail.id);
+            app.learning.recordSuccess(this.currentQuestion.cocktail.id);
             app.learning.recordSuccess(this.currentCocktail.id);
             
             // Efecto visual positivo

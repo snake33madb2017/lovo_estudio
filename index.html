@@ -41,12 +41,23 @@
         
         <!-- View: Dashboard -->
         <section id="view-dashboard" class="view active">
-            <div class="welcome-banner">
+            <div class="welcome-banner" style="margin-bottom: 10px;">
                 <h2>Hola, Bartender</h2>
                 <p>¿Qué vamos a repasar hoy?</p>
                 <button id="btn-install-app" class="btn btn-primary hidden" style="margin-top: 15px; width: auto; padding: 10px 20px; font-weight: bold; box-shadow: 0 4px 15px rgba(211, 165, 72, 0.4);">
                     <i class="ph ph-download-simple" style="margin-right: 5px;"></i> Instalar Aplicación
                 </button>
+            </div>
+            
+            <div id="learning-dashboard" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h3 style="font-size: 1rem; color: #aaa; margin-bottom: 5px;">Progreso de Maestría</h3>
+                    <div style="font-size: 1.8rem; font-weight: bold; color: var(--clr-primary);" id="mastery-percentage">0%</div>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-size: 0.85rem; color: #888;">Cócteles memorizados</p>
+                    <p style="font-size: 1.1rem; font-weight: bold;" id="mastery-count">0 / 54</p>
+                </div>
             </div>
             
             <div class="modules-grid">
@@ -65,7 +76,12 @@
                     <h3>El Mezclador</h3>
                     <p>Asocia ingredientes</p>
                 </button>
-                <button class="module-card exam-card" onclick="app.navigate('exam')">
+                <button class="module-card" style="background: linear-gradient(135deg, rgba(220,53,69,0.15) 0%, rgba(220,53,69,0.05) 100%); border-color: rgba(220,53,69,0.3);" onclick="app.navigate('rush')">
+                    <i class="ph ph-lightning" style="color: #dc3545;"></i>
+                    <h3>Servicio Real</h3>
+                    <p>Contrarreloj 60s</p>
+                </button>
+                <button class="module-card exam-card" style="grid-column: span 2;" onclick="app.navigate('exam')">
                     <i class="ph ph-timer"></i>
                     <h3>Examen Final</h3>
                     <p>15 Preguntas. 15 Minutos.</p>
@@ -184,6 +200,42 @@
                 </div>
                 <h3 id="exam-status-message">...</h3>
                 <button class="btn btn-outline" style="margin-top: 2rem; width: 100%;" onclick="app.navigate('dashboard')">Volver al Inicio</button>
+            </div>
+        </section>
+
+        
+        <!-- View: Rush -->
+        <section id="view-rush" class="view" style="text-align: center;">
+            <div class="view-header">
+                <h2 style="color: #dc3545;"><i class="ph ph-lightning"></i> Servicio Real</h2>
+                <p id="rush-timer" style="font-size: 1.5rem; font-weight: bold; color: #dc3545;">60s</p>
+            </div>
+            
+            <div id="rush-start-screen">
+                <h3 style="margin-bottom: 20px;">¿Listo para la hora pico?</h3>
+                <p style="margin-bottom: 30px; color: #aaa;">60 segundos. Identifica el método de cada cóctel. Aciertos suman +3s, fallos restan -5s. ¡Que no se te acumulen los pedidos!</p>
+                <button class="btn btn-primary" style="background: #dc3545; border-color: #dc3545;" onclick="app.rush.start()">¡Empezar Servicio!</button>
+            </div>
+            
+            <div id="rush-game-screen" class="hidden">
+                <div class="question-card" style="margin-bottom: 20px;">
+                    <h3 style="color: var(--clr-primary);">¡Un cliente pide:</h3>
+                    <h2 id="rush-cocktail-name" style="font-size: 2rem; margin: 10px 0;">Cocktail Name</h2>
+                    <p style="color: #aaa;">¿Cuál es su método de elaboración?</p>
+                </div>
+                
+                <div class="options-grid" id="rush-options">
+                    <!-- Options injected via JS -->
+                </div>
+            </div>
+            
+            <div id="rush-end-screen" class="hidden">
+                <h2 style="margin-bottom: 10px;">Servicio Terminado</h2>
+                <p style="font-size: 1.2rem; color: #aaa;">Has servido correctamente a:</p>
+                <h1 id="rush-score" style="font-size: 4rem; color: var(--clr-primary); margin: 20px 0;">0</h1>
+                <p style="margin-bottom: 30px; color: #aaa;">clientes satisfechos.</p>
+                <button class="btn btn-primary" style="margin-bottom: 15px; background: #dc3545; border-color: #dc3545;" onclick="app.rush.start()">Volver a jugar</button>
+                <button class="btn btn-outline" onclick="app.navigate('dashboard')">Ir al menú</button>
             </div>
         </section>
 
