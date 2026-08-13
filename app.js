@@ -1059,10 +1059,6 @@ app.flashcards = {
             alert("¡Has repasado todas las cartas!");
             this.init(); // Reiniciar mazo
         }
-    } else {
-            alert("¡Has repasado todas las cartas!");
-            this.init(); // Reiniciar mazo
-        }
     }
 };
 
