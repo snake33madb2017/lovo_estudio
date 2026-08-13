@@ -1,0 +1,22 @@
+{
+    "name": "Lovo Bar Training",
+    "short_name": "Lovo Training",
+    "description": "Progressive Web App para estudiar y memorizar la carta de cócteles del Lovo Bar.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#081933",
+    "theme_color": "#081933",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./lovo-bar-madrid-cocktails-club-mejores-bares-madrid-01-1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./lovo-bar-madrid-cocktails-club-mejores-bares-madrid-01-1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

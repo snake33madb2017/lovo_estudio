@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lovo Bar | PWA Training</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#081933">
+    
+    <!-- iOS Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./lovo-bar-madrid-cocktails-club-mejores-bares-madrid-01-1.webp">
+
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons: Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <!-- Top Header -->
+    <header class="app-header">
+        <div class="header-logo">
+            <img src="./lovo-bar-madrid-cocktails-club-mejores-bares-madrid-01-1.webp" alt="Lovo Bar Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23d3a548\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\'/></svg>'">
+        </div>
+        <h1 class="header-title">Entrenamiento</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="app-content">
+        <!-- Vistas de la aplicación, controladas por JavaScript -->
+        
+        <!-- View: Dashboard -->
+        <section id="view-dashboard" class="view active">
+            <div class="welcome-banner">
+                <h2>Hola, Bartender</h2>
+                <p>¿Qué vamos a repasar hoy?</p>
+                <button id="btn-install-app" class="btn btn-primary hidden" style="margin-top: 15px; width: auto; padding: 10px 20px; font-weight: bold; box-shadow: 0 4px 15px rgba(211, 165, 72, 0.4);">
+                    <i class="ph ph-download-simple" style="margin-right: 5px;"></i> Instalar Aplicación
+                </button>
+            </div>
+            
+            <div class="modules-grid">
+                <button class="module-card" onclick="app.navigate('flashcards')">
+                    <i class="ph ph-cards"></i>
+                    <h3>Flashcards</h3>
+                    <p>Memoriza la carta</p>
+                </button>
+                <button class="module-card" onclick="app.navigate('quiz')">
+                    <i class="ph ph-question"></i>
+                    <h3>Quiz Test</h3>
+                    <p>Preguntas rápidas</p>
+                </button>
+                <button class="module-card" onclick="app.navigate('mixer')">
+                    <i class="ph ph-martini"></i>
+                    <h3>El Mezclador</h3>
+                    <p>Asocia ingredientes</p>
+                </button>
+                <button class="module-card exam-card" onclick="app.navigate('exam')">
+                    <i class="ph ph-timer"></i>
+                    <h3>Examen Final</h3>
+                    <p>15 Preguntas. 15 Minutos.</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- View: Flashcards -->
+        <section id="view-flashcards" class="view">
+            <div class="view-header">
+                <h2>Flashcards</h2>
+                <p id="flashcard-counter">1 / 10</p>
+            </div>
+            
+            <div class="flashcard-container" id="flashcard-container">
+                <div class="flashcard" onclick="this.classList.toggle('flipped')">
+                <!-- Frente de la Tarjeta -->
+                <div class="card-face card-front">
+                    <div id="flashcard-image" style="width:100%; height:100%; background-size:cover; background-position:center; border-radius:16px; position:absolute; top:0; left:0; filter:brightness(0.5);"></div>
+                    <div style="position:relative; z-index:10; display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">
+                        <h3 id="flashcard-name" style="font-size: 1.8rem; text-align: center; margin-bottom: 5px;">Cocktail Name</h3>
+                        <p id="flashcard-category" class="category" style="font-size: 1rem; opacity: 0.9;">Category</p>
+                    </div>
+                </div>
+
+                <!-- Reverso de la Tarjeta -->
+                <div class="card-face card-back" style="padding: 20px;">
+                    <h3 class="back-title" style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Receta</h3>
+                    
+                    <div class="recipe-section" style="margin-bottom: 25px;">
+                        <h4 style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; margin-bottom: 12px; font-size: 1.2rem;">Ingredientes</h4>
+                        <ul id="flashcard-ingredients" style="list-style-type: disc; padding-left: 20px; line-height: 1.6; font-size: 1.1rem;"></ul>
+                    </div>
+                    
+                    <div class="recipe-section">
+                        <h4 style="border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; margin-bottom: 12px; font-size: 1.2rem;">Método</h4>
+                        <p id="flashcard-method" style="line-height: 1.6; font-size: 1.1rem; color: #eee;"></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-outline" onclick="app.flashcards.next(false)">Revisar luego</button>
+                <button class="btn btn-primary" onclick="app.flashcards.next(true)">Fácil (Lo sabía)</button>
+            </div>
+        </section>
+
+        <!-- View: Quiz -->
+        <section id="view-quiz" class="view">
+            <div class="view-header">
+                <h2>Quiz</h2>
+                <div class="quiz-score">Puntuación: <span id="quiz-score-text">0</span></div>
+            </div>
+            
+            <div class="quiz-container">
+                <h3 id="quiz-question" class="quiz-question">Cargando pregunta...</h3>
+                <div id="quiz-options" class="quiz-options">
+                    <!-- Opciones generadas dinámicamente -->
+                </div>
+            </div>
+            <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+            <button id="quiz-next-btn" class="btn btn-primary hidden" style="margin-top:20px; width:100%;" onclick="app.quiz.nextQuestion()">Siguiente Pregunta</button>
+        </section>
+
+        <!-- View: Mixer -->
+        <section id="view-mixer" class="view">
+             <div class="view-header-centered">
+                <h2>El Mezclador</h2>
+                <p>Selecciona los ingredientes para:</p>
+                <h3 id="mixer-target-cocktail" class="target-cocktail">Cargando...</h3>
+            </div>
+            
+            <div class="mixer-container">
+                <div id="mixer-ingredients" class="mixer-ingredients">
+                    <!-- Ingredientes seleccionables -->
+                </div>
+            </div>
+            
+            <div class="action-buttons mixer-actions">
+                <button class="btn btn-primary" style="width: 100%;" onclick="app.mixer.check()">¡Mezclar!</button>
+            </div>
+        </section>
+
+        <!-- View: Exam -->
+        <section id="view-exam" class="view">
+             <div class="view-header">
+                <h2>Examen Final</h2>
+                <div class="timer">
+                    <i class="ph ph-clock"></i>
+                    <span id="exam-timer">15:00</span>
+                </div>
+            </div>
+            
+            <div id="exam-intro" class="exam-intro">
+                <p>Prepárate para el examen teórico.</p>
+                <ul>
+                    <li>15 preguntas aleatorias.</li>
+                    <li>Límite de tiempo: 1 minuto por pregunta (15 min total).</li>
+                    <li>Se requiere 80% para aprobar.</li>
+                </ul>
+                <button class="btn btn-primary" style="margin-top: 2rem; width: 100%;" onclick="app.exam.start()">Comenzar Examen</button>
+            </div>
+
+            <div id="exam-active" class="exam-active hidden">
+                <p id="exam-progress">Pregunta 1 de 15</p>
+                <h3 id="exam-question" class="quiz-question">...</h3>
+                <div id="exam-options" class="quiz-options">
+                    <!-- Opciones del examen -->
+                </div>
+            </div>
+
+            <div id="exam-results" class="exam-results hidden">
+                <div class="score-circle">
+                    <h2 id="exam-final-score">0%</h2>
+                </div>
+                <h3 id="exam-status-message">...</h3>
+                <button class="btn btn-outline" style="margin-top: 2rem; width: 100%;" onclick="app.navigate('dashboard')">Volver al Inicio</button>
+            </div>
+        </section>
+
+        <!-- View: English -->
+        <section id="view-english" class="view">
+            <div class="view-header-centered">
+                <h2>Inglés Bar</h2>
+                <div class="progress-row" style="width:100%; display:flex; justify-content:space-between; color:var(--clr-text-muted); font-size:0.9rem;">
+                    <span id="english-progress-label">0 de 0 repasadas</span>
+                    <button id="english-reset-progress" class="text-button" onclick="app.english.resetProgress()" style="color:var(--clr-primary); background:none; border:none; text-decoration:underline;">Reiniciar</button>
+                </div>
+                <div class="progress-track" style="width:100%; height:6px; background:var(--clr-bg-card); border-radius:10px; overflow:hidden; margin-top:5px;">
+                    <span id="english-progress-bar" style="display:block; height:100%; width:0; background:var(--clr-success); transition:width 0.3s ease;"></span>
+                </div>
+            </div>
+
+            <div class="filters" style="margin-bottom:20px;">
+                <div id="english-categories" class="category-list" style="display:flex; gap:10px; overflow-x:auto; padding-bottom:10px;"></div>
+                <div class="search" style="display:flex; background:var(--clr-bg-card); border-radius:10px; padding:10px; margin-top:10px; border:1px solid rgba(255,255,255,0.1);">
+                    <i class="ph ph-magnifying-glass" style="color:var(--clr-text-muted); font-size:1.2rem; margin-right:10px;"></i>
+                    <input id="english-search-input" type="search" placeholder="Buscar frase o traducción" autocomplete="off" style="background:transparent; border:none; outline:none; color:var(--clr-text-main); width:100%;" oninput="app.english.search(this.value)">
+                </div>
+            </div>
+
+            <section class="study-card" id="english-study-card" style="position:relative; background:linear-gradient(145deg, var(--clr-bg-card), rgba(211,165,72,0.05)); border:1px solid rgba(211,165,72,0.2); border-radius:16px; padding:20px; min-height:300px; margin-bottom:20px; box-shadow:0 10px 20px rgba(0,0,0,0.3);">
+                <div style="display:flex; justify-content:space-between; margin-bottom:20px;">
+                    <p id="english-card-category" style="color:var(--clr-primary); font-size:0.8rem; font-weight:700; text-transform:uppercase;"></p>
+                    <p id="english-card-counter" style="color:var(--clr-text-muted); font-size:0.8rem;"></p>
+                </div>
+                
+                <div class="phrase" style="margin-bottom:30px;">
+                    <h2 id="english-phrase-en" style="font-size:1.8rem; line-height:1.3; margin-bottom:15px; color:var(--clr-text-main);"></h2>
+                    <button class="btn btn-outline" style="padding:8px 12px; font-size:0.9rem;" onclick="app.english.speak()">
+                        <i class="ph ph-speaker-high" style="margin-right:5px;"></i> Escuchar
+                    </button>
+                </div>
+
+                <button id="english-reveal-btn" class="btn btn-primary" style="width:100%; margin-bottom:15px;" onclick="app.english.reveal()">Ver traducción</button>
+                
+                <div id="english-translation" class="hidden" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:15px; margin-bottom:20px; animation: fadeIn 0.3s ease;">
+                    <p id="english-phrase-es" style="font-size:1.2rem; color:var(--clr-text-main); margin-bottom:5px;"></p>
+                    <p id="english-tip" style="color:var(--clr-text-muted); font-size:0.9rem; font-style:italic;"></p>
+                </div>
+
+                <div class="card-actions" style="display:flex; justify-content:space-between; gap:10px;">
+                    <button class="btn btn-outline" style="flex:1; padding:10px; font-size:0.9rem;" onclick="app.english.prev()">← Ant</button>
+                    <button id="english-known-btn" class="btn btn-primary" style="flex:1; padding:10px; font-size:0.9rem; background-color:var(--clr-success); color:#fff; border:none;" onclick="app.english.toggleKnown()">✓ La sé</button>
+                    <button class="btn btn-outline" style="flex:1; padding:10px; font-size:0.9rem;" onclick="app.english.next()">Sig →</button>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" onclick="app.navigate('dashboard', this)">
+            <i class="ph ph-house"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="#" class="nav-item" onclick="app.navigate('flashcards', this)">
+            <i class="ph ph-cards"></i>
+            <span>Estudio</span>
+        </a>
+        <a href="#" class="nav-item" onclick="app.navigate('mixer', this)">
+            <i class="ph ph-martini"></i>
+            <span>Mixer</span>
+        </a>
+        <a href="#" class="nav-item" onclick="app.navigate('english', this)">
+            <i class="ph ph-translate"></i>
+            <span>Inglés</span>
+        </a>
+    </nav>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal hidden" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:1000; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:20px;">
+        <div style="width:100%; max-width:600px; display:flex; justify-content:flex-end; margin-bottom:10px;">
+            <button onclick="closeVideoModal()" style="background:none; border:none; color:white; font-size:2rem;"><i class="ph ph-x"></i></button>
+        </div>
+        <div style="width:100%; max-width:600px; aspect-ratio:16/9; background:black; border-radius:10px; overflow:hidden;">
+            <iframe id="video-iframe" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- iOS Install Modal -->
+    <div id="ios-install-modal" class="modal hidden" style="position:fixed; bottom:0; left:0; width:100%; padding:20px; background:var(--clr-bg-card); border-top-left-radius:20px; border-top-right-radius:20px; z-index:1000; box-shadow:0 -5px 25px rgba(0,0,0,0.5); text-align:center;">
+        <h3 style="color:var(--clr-primary); margin-bottom:15px;">Instalar en iPhone / iPad</h3>
+        <p style="color:var(--clr-text-main); font-size:1rem; margin-bottom:20px;">Para instalar la PWA y usarla sin conexión:</p>
+        <ol style="color:var(--clr-text-muted); text-align:left; display:inline-block; margin-bottom:20px; line-height:1.6;">
+            <li>Pulsa el botón <b>Compartir <i class="ph ph-export" style="color:var(--clr-primary);"></i></b> en la barra de Safari.</li>
+            <li>Desliza hacia abajo y selecciona <b>"Añadir a la pantalla de inicio <i class="ph ph-plus-square" style="color:var(--clr-primary);"></i>"</b>.</li>
+        </ol>
+        <button class="btn btn-outline" style="width:100%;" onclick="document.getElementById('ios-install-modal').classList.add('hidden')">Entendido</button>
+    </div>
+
+    <!-- Service Worker Registration & App Logic -->
+    <script src="app.js"></script>
+    <script>
+        function openVideoModal(e) {
+            e.stopPropagation(); // Evitar voltear la tarjeta
+            if(app.currentVideoUrl) {
+                document.getElementById('video-iframe').src = app.currentVideoUrl;
+                document.getElementById('video-modal').classList.remove('hidden');
+                document.getElementById('video-modal').style.display = 'flex';
+            }
+        }
+        function closeVideoModal() {
+            document.getElementById('video-iframe').src = "";
+            document.getElementById('video-modal').classList.add('hidden');
+            document.getElementById('video-modal').style.display = 'none';
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registrado', reg))
+                    .catch(err => console.error('Error al registrar Service Worker', err));
+            });
+        }
+    </script>
+</body>
+</html>

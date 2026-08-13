@@ -1,0 +1,17 @@
+# Build and executable files
+build/
+dist/
+*.spec
+*.exe
+
+# Python files
+__pycache__/
+*.pyc
+*.bat
+update_app.py
+extract_data.py
+lovo_app.py
+
+# Excel data (too large or not needed for web)
+*.xlsx
+parsed_cocktails.json
