@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lovobar-training-v16';
+const CACHE_NAME = 'lovobar-training-v17';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
