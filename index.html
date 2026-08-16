@@ -86,6 +86,11 @@
                     <h3>Examen Final</h3>
                     <p>15 Preguntas. 15 Minutos.</p>
                 </button>
+                <button class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, rgba(211,165,72,0.15) 0%, rgba(211,165,72,0.05) 100%); border-color: rgba(211,165,72,0.3);" onclick="app.navigate('protocol')">
+                    <i class="ph ph-book-open" style="color: var(--clr-primary);"></i>
+                    <h3>Protocolo</h3>
+                    <p>Manual de servicio Lovo</p>
+                </button>
             </div>
         </section>
 
@@ -288,6 +293,132 @@
             </section>
         </section>
 
+        <!-- View: Protocol -->
+        <section id="view-protocol" class="view" style="padding: 20px; overflow-y: auto; padding-bottom: 100px; height: 100vh;">
+            <div class="view-header">
+                <h2>Protocolo</h2>
+            </div>
+            
+            <div class="protocol-content" style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); color: var(--clr-text-main); font-size: 0.95rem; line-height: 1.6;">
+                <h3 style="color: var(--clr-primary); margin-bottom: 10px; font-size: 1.1rem;">1. Bienvenida – Welcome (BARTENDER-CAMARERO)</h3>
+                <p>Hola buenas noches / buenas tardes / buenos días / Bienvenidos a LOVO, INMEDIATAMENTE EL BARTENDER ENTREGARÁ EL MENÚ Y EXTENDERÁ LA CANTIDAD DE POSAVASOS EN LA BARRA, DEPENDIENDO DEL NÚMERO DE CLIENTES QUE SEAN Y A CONTINUACIÓN PROCEDERA A SERVIR EL AGUA DE BIENVENIDA Y EL APERITIVO.</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Y se presentará: mi nombre es ................... y hoy viviréis la experiencia LOVO conmigo. ¿es la primera vez en LOVO?.</li>
+                    <li style="margin-bottom: 5px;">Siempre que sea la primera vez, se explicará al cliente quiénes somos y qué hacemos.</li>
+                    <li style="margin-bottom: 5px;">¿Os dejo el menú, si tenéis alguna duda o puedo ayudaros por favor, sería un placer?</li>
+                </ul>
+                <p style="margin-top: 10px;"><strong>SIEMPRE!!</strong> Comentamos las sugerencias del día que estará siempre en la pizarra: El cocktail del día, champagne, plato especial del mes……</p>
+                <p style="margin-top: 5px; color: #aaa;"><em>* (tiempo máx 40 segundos)</em></p>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">2. Sugerencia o pedido por parte del cliente / TOMA DE COMANDA.</h3>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;">Una vez hemos recomendado al cliente y se ha dejado aconsejar por nosotros, procederemos a servirle, (siempre tener en cuenta que se ha dejado llevar), ¿por lo cual tenemos que estar atentos y preguntar si nuestra recomendación es de su agrado? (si no lo es, dejar elegir al cliente inmediatamente). Siempre recalcamos que si tiene alguna alergia o intolerancia.</li>
+                    <li style="margin-bottom: 10px;">El cliente nos hace su pedido directamente, atenderemos su petición.</li>
+                    <li style="margin-bottom: 10px;">El cliente solo quiere tomar (bebidas, cualquiera de ellas):
+                        <ol type="a" style="margin-top: 5px; margin-bottom: 5px; padding-left: 20px;">
+                            <li>Si el cliente tiene dudas, siempre intentaremos preguntar cuáles son sus gustos para poder recomendarle…</li>
+                            <li>Preguntas frecuentes como: ¿Qué tipo de destilado bebe, si le apetece un trago largo y refrescante o quizá uno corto, si le gusta más afrutado, crítico, seco, etc…</li>
+                            <li>Si no quiere ser recomendado, inmediatamente tomamos comanda y ejecutamos.</li>
+                        </ol>
+                    </li>
+                    <li style="margin-bottom: 10px;">Tras servir el cocktail o drink explicaremos dependiendo del tiempo de una forma breve o extendida los ingredientes del cocktail y su storytelling en caso de tenerlo.</li>
+                    <li style="margin-bottom: 10px;">Tras el cliente haber probado su cocktail o drink, <strong>¡SIEMPRE!</strong> preguntaremos si este es de su agrado y si no lo fuese siempre tendrá la posibilidad de cambiarlo por otro sin ningún coste.</li>
+                    <li style="margin-bottom: 10px;">El cliente quiere comer en la barra, en este caso, 1º montaremos el "set" para que este pueda comer (servilleta, pinza y plato base) y entregaremos la carta de comida. Tomaremos nota preguntando siempre si hay algún tipo de intolerancia o alergia… Recordaremos al cliente <strong>SIEMPRE</strong> su pedido repitiéndoselo antes de registrar la comanda en el TPV y enviaremos al departamento de comida. ¡En este momento nuestro ritmo de servicio y respeto a los tiempos del cliente debe estar presente <strong>SIEMPRE</strong>!</li>
+                    <li style="margin-bottom: 10px;">Cuando pongamos los platos pedidos por el cliente, <strong>SIEMPRE</strong> contaremos qué ingredientes lleva el plato y si hay alguna recomendación para comerlo si así fuese.</li>
+                    <li style="margin-bottom: 10px;">Pasados unos minutos preguntaremos qué tal está todo y si podemos hacer algo por ellos.</li>
+                    <li style="margin-bottom: 10px;">Cuando una copa esté medio vacía, preguntaremos si le apetece probar otro drink, si es así procederemos a dejar el menú o recomendarle algo que entre en los gustos del cliente.</li>
+                    <li style="margin-bottom: 10px;">En el caso de la comida siempre preguntaremos si le apetece algo dulce tanto sólido, como líquido.</li>
+                </ul>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">3. Elaboración del Cocktail o combinado (BARTENDER)</h3>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Siempre intentaremos elaborar y/o servir el cóctel/combinado a la vista del cliente.</li>
+                    <li style="margin-bottom: 5px;">Una vez entregado al cliente esperaremos hasta el Segundo trago para volver a preguntar: ¿¿EL cóctel es de su agrado??</li>
+                    <li style="margin-bottom: 5px;">Si es <strong>SI</strong>: le ofreceremos repetir cuando acabe o bien le ofreceremos dejarse llevar, en este caso Preguntaremos algún gusto más al cliente, o quiere probar una cosa diferente.</li>
+                    <li style="margin-bottom: 5px;">Si es <strong>NO</strong> (no le gusta), le ofreceremos otra opción preguntando más específicamente los gustos y prepararemos un cóctel con sus destilados y sabores habituales. En este momento siempre elaboramos un segundo cóctel bajo los gustos del cliente.</li>
+                    <li style="margin-bottom: 5px;">Si vemos un gran interés en nuestras acciones o productos, siempre que podamos ofreceremos al Cliente probar algún producto que desee por separado del cocktail.</li>
+                    <li style="margin-bottom: 5px;">Ofreceremos una segunda bebida si el cliente no desea nada más, rellenaremos el vaso de agua para finalizar y refrescar.</li>
+                </ul>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">4. Entrega y presentación del producto.</h3>
+                <p><strong>SIEMPRE!</strong> Que se sirve un producto tenemos que tener presente el criterio de calidad y servicio del mismo. Esto quiere decir que, por ejemplo:</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Las copas deben estar impolutas y repasadas.</li>
+                    <li style="margin-bottom: 5px;">Las pinzas pulidas.</li>
+                    <li style="margin-bottom: 5px;">El área de la barra debería estar limpia y preparada.</li>
+                    <li style="margin-bottom: 5px;">Los platos deben salir con todos sus ingredientes y en la temperatura adecuada.</li>
+                    <li style="margin-bottom: 5px;">Siempre debemos explicar o enunciar el plato que servimos. Ej:” aquí tiene su jamón”, Ej:”aquí tiene su selección de quesos” y proceder a explicar los diferentes tipos.</li>
+                </ul>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">5. Up Selling de venta sugestiva.</h3>
+                <p>En este punto, lo más importante es tener presente que siempre tenemos que intentar hacer una venta por encima del pedido inicial.</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Cuando un cliente pide su 2ª ronda siempre hay que intentar hacer un up selling de venta en calidad. Por ejemplo; nos han pedido un whisky americano básico y en la 2ª ronda intentaremos ofrecerle un Bourbon o Rye de calidad superior, lo cual incrementara la facturación de la cuenta.</li>
+                    <li style="margin-bottom: 5px;">Siempre que LOVO pueda ofrecer algún producto especial, habrá que prescribirlo al cliente y comentárselo. Ejemplo: Negroni week, Semana en la cual la marca icónica Campari promueve el consumo del cocktail clásico negroni el cual nosotros hemos preparado esta versión, etc…..</li>
+                    <li style="margin-bottom: 5px;">Esta técnica es aplicable también a la comida. Ejemplo: En un grupo de 6 personas están indecisos entre 3 platos, intentar ofrecer 3 medias raciones (su coste estará un 10% por encima del precio de la ración).</li>
+                </ul>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">6. Bottle Service en Barra. (Servicio no habitual)</h3>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Si el cliente quiere una botella preguntaremos qué destilado desea, y recomendaremos según el gusto del cliente y nuestro potencial de venta. (siempre prescribimos nuestros mejores productos, el cliente LOVO busca calidad).</li>
+                    <li style="margin-bottom: 5px;">Una vez elegida la botella, ofreceremos los refrescos que el cliente desee, prepararemos o pediremos la botella con su cubitera y lito.</li>
+                    <li style="margin-bottom: 5px;">Preparamos el servicio de vasos/refrescos y garnish correspondientes.</li>
+                    <li style="margin-bottom: 5px;">Preparamos vasos acorde con clientes máx 6 y refrescos a gusto del cliente máx 6.</li>
+                </ul>
+                <p style="margin-top: 10px; color: #fff; font-weight: bold;">Abriremos la botella y serviremos una primera ronda de copas a cada comensal MUY IMPORTANTEEEEE</p>
+                <p style="margin-top: 10px;">Después de servir la primera Ronda volveremos a servir vasos con hielo y refrescos. 3 vasos y 3 refrescos.</p>
+                <p style="margin-top: 10px;">Se cobra al momento, en la medida de lo posible, si el cliente nos dice que prefiere pagar después Detallaremos que: Disculpe, pero en el servicio de barra no abrimos cuenta. Puntualmente si el cliente es potencialmente Members, le abriremos cuenta. Requisitos: Tarjeta de crédito (comprobamos identificación).</p>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">7. Entrega de la cuenta.</h3>
+                <p>En el servicio de barra, la cuenta la entregará el barman que los ha atendido o en su defecto un compañero, pero siempre con la revisión a la cuenta del barman que les sirvió.</p>
+                <p style="margin-top: 10px;">Requisitos en el pago:</p>
+                <ul style="margin-top: 5px; padding-left: 20px;">
+                    <li style="margin-bottom: 5px;">Tarjeta de crédito (comprobamos identificación).</li>
+                    <li style="margin-bottom: 5px;">Efectivo, comprobación de billetes en máquina detectora.</li>
+                    <li style="margin-bottom: 5px;">Cuando el pago se fracciona entre los clientes, la cuenta se presentará por el total dividido a partes iguales y así debe ser Cobrada. No entraremos en separar producto por persona. en su defecto será entregada íntegra y serán los clientes los cuales dividan su cuenta como mejor les convenga y procederemos al cobro de la misma.</li>
+                </ul>
+                <p style="margin-top: 10px;">Nos mantendremos al margen sobre quién paga la cuenta, deberán decidirlo entre ellos.</p>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">8. Despedida y agradecimiento.</h3>
+                <p>En este punto tenemos que tener muy presente que la despedida debe ser igual de calurosa que la bienvenida, debemos sentirnos felices que el cliente haya confiado en nosotros para su disfrute.<br>
+                Siempre nos despediremos con Buenas tardes / Buenas noches, hasta pronto, gracias!!!!!</p>
+
+                <h3 style="color: var(--clr-primary); margin-top: 30px; margin-bottom: 10px; font-size: 1.1rem;">9. Reflexión</h3>
+                <h4 style="color: #fff; margin-top: 15px; margin-bottom: 5px; font-size: 1.05rem;">* Los NO Tangibles</h4>
+                <p>Los detalles no tangibles son aquellos que perduran pues traspasan el umbral de lo material y llegan a los sentimientos. Debemos grabarlos para no perder el rumbo a la “Calidad LOVO”.</p>
+                <ul style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px; color: #ddd;">
+                    <li>La Sonrisa</li>
+                    <li>La Amabilidad</li>
+                    <li>La Disposición</li>
+                    <li>La Acogida y Bienvenida</li>
+                    <li>La Empatía</li>
+                    <li>La Psicología VS Calidad de Servicio.</li>
+                </ul>
+                
+                <h4 style="color: #fff; margin-top: 15px; margin-bottom: 5px; font-size: 1.05rem;">* Los Tangibles</h4>
+                <p>Aquellos que sorprenden por no ser habituales dentro de los cánones de la convivencia y el servicio. En nuestra práctica marcaran la “Excelencia”.</p>
+                <ul style="margin-top: 10px; padding-left: 20px; color: #ddd;">
+                    <li style="margin-bottom: 5px;">Retirada del Abrigo/Paraguas/Maletas. Facilitar los tránsitos y la acomodación.</li>
+                    <li style="margin-bottom: 5px;">Acomodación en la silla y mesa.</li>
+                    <li style="margin-bottom: 5px;">Ofrecer apoyos auxiliares si fuera necesario, para comodidad del cliente.</li>
+                    <li style="margin-bottom: 5px;">Indicar y prescribir con empatía.</li>
+                    <li style="margin-bottom: 5px;">Identificar si un cliente necesita la ayuda de gafas o flexo de luz. ¡¡¡Antes de q lo pidan!!!</li>
+                    <li style="margin-bottom: 5px;">Identificar si un cliente tiene frío o calor y acomodar la temperatura.</li>
+                    <li style="margin-bottom: 5px;">Acompañar y ayudar a las personas mayores.</li>
+                    <li style="margin-bottom: 5px;">Observar a nuestros comensales si hacen referencia algún plato y poder ayudar.</li>
+                    <li style="margin-bottom: 5px;">Retirar y sustituir cualquier plato que no convezca.</li>
+                    <li style="margin-bottom: 5px;">Respetar el espacio de nuestros clientes.</li>
+                    <li style="margin-bottom: 5px;">Facilitarles cualquier tipo de servicio o información que necesiten… wifi, impresiones, compra o recado de…</li>
+                    <li style="margin-bottom: 5px;">Dar importancia a aquellas personas que muestren una alergia o intolerancia es síntoma de respeto y suele agradar bastante.</li>
+                    <li style="margin-bottom: 5px;">Facilitar de manera elegante cualquier cuestión que el cliente demande o intuyamos.</li>
+                </ul>
+                <p style="text-align: center; font-size: 1.2rem; margin-top: 40px; color: var(--clr-primary); font-weight: bold; border-top: 1px solid rgba(211,165,72,0.3); padding-top: 20px;">
+                    ¡¡HACER SENTIR COMO NOS GUSTARÍA SENTIR!! ¡¡HAZLES VIBRAR!!<br><br>
+                    SOMOS UNA COCTELERIA EMOCIONAL Y QUEREMOS QUE LO SEPAN!
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <!-- Bottom Navigation -->
@@ -307,6 +438,10 @@
         <a href="#" class="nav-item" onclick="app.navigate('english', this)">
             <i class="ph ph-translate"></i>
             <span>Inglés</span>
+        </a>
+        <a href="#" class="nav-item" onclick="app.navigate('protocol', this)">
+            <i class="ph ph-book-open"></i>
+            <span>Protocolo</span>
         </a>
     </nav>
 
