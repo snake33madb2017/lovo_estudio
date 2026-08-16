@@ -4,876 +4,288 @@
 const cocktailDB = [
     {
         "id": 1,
-        "name": "Negroni",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Bubi",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "30ml Campari",
-            "30ml Ginebra seca",
-            "30ml Vermouth rojo"
+            "50ml Ron Arehucas Blanco",
+            "25ml Licor Lemon grass",
+            "15ml Licor de Platano",
+            "5ml Cacao pico",
+            "15ml King Sawa",
+            "1dash Tintura Contriri",
+            "top Ginger Beer"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja",
-        "method": "Verter todos los ingredientes, remover hasta enfriar y diluir a punto optimo.",
-        "image": "./assets/Cocktail_Negroni.webp",
+        "garnish": "Rim sal de cacao por todo el vas",
+        "method": "DIRECTO: añadimos todos los ingredientes al vaso y terminao con top de ginger beer",
+        "image": "./assets/lovo_bubi.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 2,
-        "name": "Negroni Sbagliato",
-        "category": "*amargo-dulce, refrescante*",
+        "name": "Manabi",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "30ml Campari",
-            "30ml Vermouth rojo",
-            "top Champagne"
+            "30ml Mix de Rones",
+            "10ml Worthy Park",
+            "10ml Ron Bumbu",
+            "55ml Z. Piña",
+            "45ml Z. Tomate de Arbol",
+            "20ml Licor Cacahute",
+            "10ml Sirope de Coco"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "twist de naranja en forma de X",
-        "method": "Verter todos los ingredientes  y remover",
-        "image": "./assets/Cocktail_Negroni_Sbagliato.webp",
+        "garnish": "Espuma de Tomate de Arbol y Ají amarillo & polvo cacahuete",
+        "method": "DIRECTO: añadimos todos los ingredientes al vaso, terminamos con el gasificado y colocamos espuma por encima &",
+        "image": "./assets/lovo_manabi.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 3,
-        "name": "Americano",
-        "category": "*Intenso, amargo-dulce, refrescante*",
+        "name": "Inuit",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "30ml Campari",
-            "30ml Vermouth rojo",
-            "60ml Soda"
+            "20ml Mix Gin",
+            "30ml Licor Salmon & eneldo",
+            "25ml King Sawa",
+            "10ml S. Simple",
+            "1dash Bitter Ruibarbo"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja en X",
-        "method": "Verter todos los ingredientes , remover y enfriar a punto optimo",
-        "image": "./assets/Cocktail_Americano.webp",
+        "garnish": "Gelatina acida y polvo de salmon",
+        "method": "Shake & Double Strain:: añadir todos los indredientes dentro de la coctelera y  agitar corto e intenso.",
+        "image": "./assets/lovo_inuit.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 4,
-        "name": "Boulevardier",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Maori",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "30ml Whisky bourbon",
-            "30ml Campari",
-            "30ml Vermouth rojo"
+            "40ml Gin Matcha",
+            "15ml Licor Lima Kaffir",
+            "15ml Sirope Hoja higuera",
+            "25ml Z. Lima",
+            "top Soda Higuera"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja en forma de X",
-        "method": "Verter todos los ingredientes, remover y enfriar a punto optimo",
-        "image": "./assets/Cocktail_Boulevardier.webp",
+        "garnish": "Aire Fresco herbal",
+        "method": "Shake & Double Strain:: añadir todos los indredientes dentro de la coctelera y  agitar corto e intenso.",
+        "image": "./assets/Cocktail_Maori.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 5,
-        "name": "Manhatan",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Masai",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "60ml Whisky rye",
-            "30ml Vermouth rojo",
-            "2dash Angostura"
+            "25ml Bombay saphire",
+            "50ml Vemouth Dry 1757 de Calabza",
+            "25ml King Sawa",
+            "15ml S. Calabaza",
+            "15ml S. Simple",
+            "15ml Hibiscus",
+            "15ml Campari"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Cereza marraschino",
-        "method": "Verter todos los ingredientes , remover hasta diluir y enfriar a punto optimo",
-        "image": "./assets/Cocktail_Manhatan.webp",
+        "garnish": "Pipeta en el Hielo",
+        "method": "Shake: Corto y ligero",
+        "image": "./assets/Cocktail_Masai.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 6,
-        "name": "Martinez",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Indio Navajos",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "60ml Ginebra Olt Tom",
-            "30ml Vermouth rojo",
-            "1barspoon Sirope de marraschino"
+            "50ml Bourbon a la Mantequilla",
+            "20ml Licor de Tabaco",
+            "15ml Licor de Maiz Azul",
+            "10ml Licor de Cacao"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Cereza de marraschino",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Martinez.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 7,
-        "name": "Hanky Panky",
-        "category": "*Intenso, amargo-dulce*",
-        "ingredients": [
-            "45ml Ginebra",
-            "45ml Vermouth rojo",
-            "20ml Fernet branca"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist naranja",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Hanky_Panky.webp",
+        "garnish": "Tortilla de maiz azul",
+        "method": "Stir: verter todos los ingredientes en el mixing glass, remover, enfriar a punto optimo, servir",
+        "image": "./assets/Cocktail_Navajo.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 8,
-        "name": "Sazerac",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Samurai",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "20ml Whisky bourbon",
-            "20ml Whisky rye",
-            "20ml Cogñac",
-            "1 barspoon Sirope simple",
-            "3 dash Absenta",
-            "3dash Angostura"
+            "54gr Mix Whisky",
+            "20gr Licor de Pandam",
+            "12,5gr Miso",
+            "10gr Gallteta",
+            "25gr Z. Limon",
+            "20gr Sirope Alga Nori",
+            "28gr Leche de Soja",
+            "100ml soda higuera"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist limón",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Sazerac.webp",
+        "garnish": "ninguno",
+        "method": "Servicio de te delante del cliente con su repectiva jarra",
+        "image": "./assets/Cocktail_Samurai.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 9,
-        "name": "Old Fasioned",
-        "category": "*Intenso, seco-dulce*",
+        "name": "Ngi",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "60ml Whisky Bourbon",
-            "2dash Angostura",
-            "10ml Azúcar demerara"
+            "40ml Brandy Fundador",
+            "15ml Licor de Cacao",
+            "70ml Ginnes",
+            "10ml King Sawa",
+            "10ml Sirope simple",
+            "1 dash Bitter Cacao"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist naranja y cereza marraschino",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Old_Fasioned.webp",
+        "garnish": "Espuma de Banana y plata comestible",
+        "method": "Directo:  Vaso rocks redondo, servir y terminar con espuma banana",
+        "image": "./assets/lovo_ngi.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 10,
-        "name": "Vieux Carre",
-        "category": "*Intenso, amargo-dulce*",
+        "name": "Boazu",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "20ml Whisky bourbon",
-            "20ml Whisky Rye",
-            "20ml Cogñac",
-            "25ml Vermouth rojo",
-            "10ml DOM benedictine",
-            "2dash Peycheaud",
-            "2dash Angostura"
+            "20ml Mix Ron",
+            "20ml Everum",
+            "50ml Cordial de Fresa",
+            "15ml Pinot Charentes",
+            "15ml Fino",
+            "2dash Bitter Nuez"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Vieux_Carre.webp",
+        "garnish": "Fresas encurtida",
+        "method": "Stir: agregar todos los ingredientes en la codctelera, havcer throw y servir.",
+        "image": "./assets/lovo_boazu.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 11,
-        "name": "Dry Martini",
-        "category": "*Seco, intenso*",
+        "name": "Tliish",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "100ml Ginebra",
-            "15ml Vermouth Dry blanco"
+            "45ml Mix Ron a la Nuez Moscada",
+            "20ml Cordial pera Asada",
+            "10ml King Sawa",
+            "15ml Sirope Pera al Horno"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "2 aceitunas o twist de limón",
-        "method": "Verter Dry Vermouth  , remover hasta mojar todos los hielo. Descartar el vermut . Agregar la gin .",
-        "image": "./assets/Cocktail_Dry_Martini.webp",
+        "garnish": "Residuo",
+        "method": "Stir: agregar todos los ingrediente en el mizing glass, remover y diluir a temperatura optima y servir.",
+        "image": "./assets/lovo_tliish.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 12,
-        "name": "Bronx",
-        "category": "*intenso, refrescante, amargo-dulce*",
+        "name": "Shunme",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "50ml Ginebra",
-            "25ml Vermouth rojo",
-            "15ml Vermouth blanco dry",
-            "30ml Zumo de naranja"
+            "10ml Laphroaig 10",
+            "40ml Mezcal Union",
+            "30ml Licor Herbal",
+            "10ml Sirope Hierba Luisa",
+            "5ml Humo",
+            "25ml King Sawa",
+            "top Soda Higuera"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Bronx.webp",
+        "garnish": "ramillete verde(estragon)",
+        "method": "Directo:",
+        "image": "./assets/Cocktail_Shunme.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 13,
-        "name": "Naked & Famous",
-        "category": "*intenso, amargo, acido*",
+        "name": "Enngerai",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "25ml Mezcal",
-            "25ml Chartreuse",
-            "25ml Aperol",
-            "25ml Z. lima"
+            "30ml Tequila 3 Generaciones",
+            "20ml Mezcal Union",
+            "10ml Humo",
+            "20ml Sirope Mango",
+            "35ml Z. Calamansi",
+            "35ml Licor Mango Picante",
+            "10ml Licor Melon Cantalupe"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Aceites esenciales de un twist de limón",
-        "method": "Verter todos los ingredientes , hacer un shake corto y fuerte",
-        "image": "./assets/Cocktail_Naked_and_Famous.webp",
+        "garnish": "flores secas",
+        "method": "Directo: todos los ingredientes / hielo pile / remover homogeneamente terminar con mas hielo y flores",
+        "image": "./assets/lovo-bar-nordico-cocktail.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 14,
-        "name": "Vesper Martini",
-        "category": "*Seco-intenso*",
+        "name": "Manuq",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "60ml Ginebra",
-            "15ml Lillet blanc",
-            "20ml vodka"
+            "10ml Mix Gin",
+            "40ml Licor Salmon & Eneldo",
+            "25ml King Sawa",
+            "150ml Tonica Albahaca & Pepino",
+            "10ml Voltaje"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Twist de limón",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Vesper_Martini.webp",
+        "garnish": "Cupula hielo pile y Arandanos rojos",
+        "method": "Directo:    añadir hielo y todos los ingredientes, remover  / terminar cupula y azucar glass",
+        "image": "./assets/Cocktail_Nanuq.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 15,
-        "name": "Champagne Cocktail",
-        "category": "*Seco, intenso, toque dulce*",
+        "name": "Honu",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "30ml Cogñac",
-            "3Dash Angostura",
-            "1terron Azucar",
-            "Top Champagne"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Empapar el terron con angostura, verter  y agregar todos los ingredientes restantes.",
-        "image": "./assets/Cocktail_Champagne_Cocktail.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 16,
-        "name": "Last Word",
-        "category": "*Intenso, acido, toque dulce*",
-        "ingredients": [
-            "25ml Ginebra",
-            "25ml Licor de Marraschino",
-            "25ml Z. Limón",
-            "25ml Chartreuse"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Cereza marraqschino",
-        "method": "Verter todos los ingredientes , hacer un shake corto y fuerte",
-        "image": "./assets/Cocktail_Last_Word.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 17,
-        "name": "Mint Julep",
-        "category": "*intenso, dulce*",
-        "ingredients": [
-            "60ml Whisky Bourbon",
-            "15ml Sirope Simple",
-            "8 Hojas de menta",
-            "4dash Angostura"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta y cereza marrachino",
-        "method": "Verter todos los ingredientes, remover y enfriar a punto optimo",
-        "image": "./assets/Cocktail_Mint_Julep.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 18,
-        "name": "French 75",
-        "category": "Clásicos",
-        "ingredients": [
-            "50ml Ginebra",
-            "30ml Z. Limón",
-            "25ml Sirope simple",
-            "Top Champagne"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist Limon",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto. Top champagne",
-        "image": "./assets/Cocktail_French_75.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 19,
-        "name": "French Martini",
-        "category": "*Fresco, acido, afrutad*",
-        "ingredients": [
-            "60ml Vodka",
-            "15ml Licor de Frambuesa",
-            "45ml Z. Piña"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Flor de pensamiento",
-        "method": "",
-        "image": "./assets/Cocktail_French_Martini.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 20,
-        "name": "Daiquiri",
-        "category": "*Intenso, fresco, acido*",
-        "ingredients": [
-            "50ml Ron Blanco",
+            "50ml Tequila Altos de Sisho Verde",
             "25ml Z. Lima",
-            "20ml Sirope Simple"
+            "20ml Sirope Hoja Higuera",
+            "30ml Clara de Huevo"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Daiquiri.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 21,
-        "name": "Porn Star Martini",
-        "category": "*dulce, acido*",
-        "ingredients": [
-            "50ml vodka",
-            "40ml Puré ´fruta de la pasion",
-            "20ml Licor fruta de la pasion",
-            "20ml Sirope de Vainilla",
-            "1Shot Champagne"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Flor de pensamiento y shot espumoso al lado",
-        "method": "Verter todos los ingredientes , gajos exprimir los 2 pero introducir  solo 1.",
-        "image": "./assets/Cocktail_Porn_Star_Martini.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 22,
-        "name": "Cosmopolitan",
-        "category": "*seco y citrico*",
-        "ingredients": [
-            "50ml Vodka",
-            "30ml Triple sec",
-            "20ml Z. Arandanos",
-            "2gajos Lima"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist de naranja",
-        "method": "Verter todos los ingredientes , gajos exprimir los 2 pero introducir  solo 1.",
-        "image": "./assets/Cocktail_Cosmopolitan.webp",
+        "garnish": "Rim Cebollino y sal",
+        "method": "Shake: Estilo sour / todos los ingredientes en la coctelera, dry shake and shake.",
+        "image": "./assets/lovo-bar-nordico-cocktail.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 23,
-        "name": "Whisky Sour",
-        "category": "*cremoso, fresco, sour*",
+        "name": "Tomate & Strawberry",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "50ml Whisky Bourbon",
-            "25ml Z. Limón",
-            "20ml Sirope Simple",
-            "30ml Clara de Huevo",
-            "5Ddrops Angostura"
+            "30 Mix Gin de Fresas",
+            "10 Amontillado",
+            "5 Martini Bitter",
+            "35 Agua de Tomate",
+            "10 Z. Lima",
+            "15 Sirope Simple"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Angostura",
-        "method": "Verter todos los ingredientes , agitar sin hielo ara emulsionar la clara y terminar con un shake haciendo rodar los hielos, hasta enfrian y diluir a punto optimo",
-        "image": "./assets/Cocktail_Whisky_Sour.webp",
+        "garnish": "",
+        "method": "Shake: agitado corto e intenso y Servir doble colado",
+        "image": "./assets/Cocktail_TomatoStrawberry-scaled.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
         "id": 24,
-        "name": "Pisco Sour",
-        "category": "*cremoso, fresco, sour*",
+        "name": "Jupe Banane",
+        "category": "Tribu Lovo",
         "ingredients": [
-            "60ml Pisco",
-            "25ml Z. Líma",
-            "20ml Sirope Simple",
-            "30ml Clara de Huevo",
-            "5Drops Angostura"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Angostura",
-        "method": "Verter todos los ingredientes , agitar sin hielo ara emulsionar la clara y terminar con un shake haciendo rodar los hielos, hasta enfrian y diluir a punto optimo",
-        "image": "./assets/Cocktail_Pisco_Sour.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 25,
-        "name": "Penicillin",
-        "category": "*intenso, sour, picante*",
-        "ingredients": [
-            "45ml Whisky Scotch",
-            "15ml Whisky Scotch smoky",
-            "25ml Z. Limón",
-            "15ml Miel",
-            "25ml Genjibre Licor"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist de limón",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Penicillin.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 26,
-        "name": "Piña Colada",
-        "category": "*dulce, sour, cremoso*",
-        "ingredients": [
-            "60ml Ron Blanco",
-            "100ml Z. Piña",
-            "25ml Crema de Coco",
-            "20ml Z. Lima",
-            "15ml Sirope de Coco",
-            "15ml Nata"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Piña desidratada",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Piña_Colada.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 27,
-        "name": "Margarita",
-        "category": "*acido*",
-        "ingredients": [
-            "60ml Tequila",
-            "30ml Triple Sec",
-            "30ml Z. Lima"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "1/2 copa rim de sal",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Margarita.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 28,
-        "name": "White Lady",
-        "category": "*cremoso, fresco, sour*",
-        "ingredients": [
-            "50ml Ginebra",
-            "20ml Triple sec",
-            "20ml Z. Limón",
+            "60ml Mix Vodka",
+            "10ml Licor de Plátano",
+            "25ml Zumo limón",
             "15ml Sirope simple",
-            "30ml Clara de Huevo"
+            "100ml Yogurt fresa y platano",
+            "5 gotas Bitter suze rojo"
         ],
         "glassware": "Vaso Genérico",
-        "garnish": "Angostura",
-        "method": "Verter todos los ingredientes , agitar sin hielo ara emulsionar la clara y terminar con un shake haciendo rodar los hielos, hasta enfrian y diluir a punto optimo",
-        "image": "./assets/Cocktail_White_Lady.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 29,
-        "name": "Bellini",
-        "category": "*afrutado, seco,refrescante*",
-        "ingredients": [
-            "50ml Puré Melocotón",
-            "15ml Licor de Melocotón",
-            "Top Champgane"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Verter todos los ingredientes, remover y homogenizar.",
-        "image": "./assets/Cocktail_Bellini.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 30,
-        "name": "Bloody Mary",
-        "category": "*acido,sabroso*",
-        "ingredients": [
-            "50ml Vodka",
-            "20ml Bloody mix",
-            "20ml Z. Limón",
-            "100ml Z. Tomate"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Por determinar",
-        "method": "Verter todos los ingredientes , remover hasta enfriar y diluir a punto optimo",
-        "image": "./assets/Cocktail_Bloody_Mary.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 31,
-        "name": "Mojito",
-        "category": "*acido, dulce y refrecante*",
-        "ingredients": [
-            "50ml Ron Blanco",
-            "25ml Z. Lima",
-            "20ml Sirope simple",
-            "2021-06-08 00:00:00 hojas de Menta",
-            "Top Soda"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta",
-        "method": "Verter todos los ingredientes, remover hasta homogenizar y terminar con hielo pile.",
-        "image": "./assets/Cocktail_Mojito.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 32,
-        "name": "Pimm´s Cup",
-        "category": "*amargo-dulce, refrescante*",
-        "ingredients": [
-            "50ml Pimm´s",
-            "60ml Sprite",
-            "60ml Ginger ale",
-            "5 slice Fresa",
-            "2 slice Pepino",
-            "1 slice Limón",
-            "1 slice Naranja",
-            "5 Hojas menta"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta",
-        "method": "Verter todos los ingredientes, remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Pimm´s_Cup.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 33,
-        "name": "Chilcano",
-        "category": "*acido, refrescsante*",
-        "ingredients": [
-            "50mkl Pisco",
-            "20ml Z. Lima",
-            "10ml Sirope simple",
-            "2dash Angostura",
-            "Top Ginger ale"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Gajo de lima",
-        "method": "Verter todos los ingredientes, remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Chilcano.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 34,
-        "name": "Spritz",
-        "category": "*seco, refrescante*",
-        "ingredients": [
-            "50ml Vino blanco",
-            "30ml Soda",
-            "Top Champagne",
-            "1 twist limón"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta",
-        "method": "Verter todos los ingredientes  y remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Spritz.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 35,
-        "name": "Aperol Spritz",
-        "category": "*amargo-dulce,refrescante*",
-        "ingredients": [
-            "50ml Aperol",
-            "30ml Soda",
-            "Top Champagne"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist naranja",
-        "method": "Verter todos los ingredientes  y remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Aperol_Spritz.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 36,
-        "name": "White Russian",
-        "category": "*intenso, dulce, cremoso*",
-        "ingredients": [
-            "60ml Vodka",
-            "30ml Licor de café",
-            "15ml Sirope simple",
-            "50ml Nata"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Verter todos los ingredientes, remover hasta homogenizar, terminar con la crema deslizandola suavemente con una barspoon",
-        "image": "./assets/Cocktail_White_Russian.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 37,
-        "name": "Black Russian",
-        "category": "*intenso, dulce*",
-        "ingredients": [
-            "60ml Voka",
-            "40ml Licor de café"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Verter todos los ingredientes  y remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Black_Russian.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 38,
-        "name": "Expresso Martini",
-        "category": "*cremoso, intenso, dulce*",
-        "ingredients": [
-            "50ml Vodka",
-            "50ml Expresso",
-            "25ml Licor café",
-            "15ml Sirope simple",
-            "20ml Clara de huevo"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Sin",
-        "method": "Verter todos los ingredientes  y agitar como para Sour.",
-        "image": "./assets/Cocktail_Expresso_Martini.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 39,
-        "name": "Amareto Sour",
-        "category": "*dulce-acido*",
-        "ingredients": [
-            "50ml Amareto",
-            "25ml Z. limón",
-            "20ml Sirope simple",
-            "1 Dash Z. Naranja"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Angostura",
-        "method": "Verter todos los ingredientes , agitar sin hielo ara emulsionar la clara y terminar con un shake haciendo rodar los hielos, hasta enfrian y diluir a punto optimo",
-        "image": "./assets/Cocktail_Amareto_Sour.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 40,
-        "name": "Long Island",
-        "category": "*intenso, dulce, acido, refrescante*",
-        "ingredients": [
-            "10ml Vodka",
-            "10ml Tequila",
-            "10ml Ron",
-            "10ml Ginebra",
-            "10ml Cointreau",
-            "25ml Z. Lima",
-            "20ml Sirope simple",
-            "Top Colca cola"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Gajo lima",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.  Servir primero l coca cola y despues servir el liquido  suaventemte para crear 2 capas.",
-        "image": "./assets/Cocktail_Long_Island.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 41,
-        "name": "Basil Smash",
-        "category": "*intenso, sour, notas verdes*",
-        "ingredients": [
-            "50ml Ginebra",
-            "25ml Z. limón",
-            "20ml Sirope simple",
-            "6 Hojas albahaca"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Albahaca",
-        "method": "",
-        "image": "./assets/Cocktail_Basil_Smash.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 42,
-        "name": "Bramble",
-        "category": "*fresco, sour, frutos rojos*",
-        "ingredients": [
-            "50ml Ginebra",
-            "25ml Z. limón",
-            "15ml Sirope simple",
-            "10ml Licor mora"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Mora, frambuesa y menta",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto. Servir y terminar float licor",
-        "image": "./assets/Cocktail_Bramble.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 43,
-        "name": "Mai Tai",
-        "category": "*intenso, sour,fresco*",
-        "ingredients": [
-            "30ml Ron Blnaco",
-            "30ml Ron especiado",
-            "25ml Z. lima",
-            "20ml Orgeqat",
-            "15ml Cointreau"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta y piel de lima",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Mai_Tai.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 44,
-        "name": "Blood & Sand",
-        "category": "*intenso, amargo-dulce*",
-        "ingredients": [
-            "25ml Scotch Whisky",
-            "25ml Cherry herring",
-            "25ml Vermouth",
-            "25ml Zumo de naranja"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Cereza marraschino",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Blood_and_Sand.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 45,
-        "name": "Paloma",
-        "category": "*sour, refrescante*",
-        "ingredients": [
-            "50ml Tequila",
-            "10ml Sirope de agave",
-            "25ml Z. lima",
-            "Top Soda pomelo rosa"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist pomelo",
-        "method": "Verter todos los ingredientes y remover hasta homegenizar todo.",
-        "image": "./assets/Cocktail_Paloma.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 46,
-        "name": "Zombi",
-        "category": "*tropical, intenso, refrecante*",
-        "ingredients": [
-            "30ml Ron jamaicano",
-            "45ml Ron blano",
-            "20ml Ron overproof",
-            "30ml Z. Lima",
-            "20ml Z. piña",
-            "15ml Licor Falernun",
-            "10ml Z. pomelo",
-            "5ml Granadina",
-            "2dash Absenta"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta y cereza marraschino",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Zombi.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 47,
-        "name": "Gin Fizz",
-        "category": "*cremoso, sour, refrescante*",
-        "ingredients": [
-            "50ml Ginebra",
-            "25ml Z. limón",
-            "20ml Sirope simple",
-            "30ml Clara de huevo",
-            "Top Soda"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Flor de pensamiento",
-        "method": "Verter todos los ingredientes , agitar sin hielo ara emulsionar la clara y terminar con un shake haciendo rodar los hielos, hasta enfrian y diluir a punto optimo. Top soda",
-        "image": "./assets/Cocktail_Gin_Fizz.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 48,
-        "name": "Caipiriña",
-        "category": "*acido, intenso, refrescante*",
-        "ingredients": [
-            "60ml Cachaça",
-            "4 gajos Lima",
-            "10ml Z. Lima",
-            "15ml Sirope simple"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Gajo de lima",
-        "method": "Verter todos los ingredientes  y remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Caipiriña.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 49,
-        "name": "SouthSide",
-        "category": "*intenso, niotas verdes, acido*",
-        "ingredients": [
-            "50ml Ginebra",
-            "25ml Z. Limón",
-            "20ml Sirope simple",
-            "5 Hojas de menta"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Hoja de menta",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_SouthSide.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 50,
-        "name": "Trinidad Sour",
-        "category": "*intenso, amargo-dulce*",
-        "ingredients": [
-            "45ml Angostura",
-            "15ml Whisky Rye",
-            "25ml Z. lima",
-            "20ml Orgeat"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Aceistes esenciales de limon y descartar el twist",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Trinidad_Sour.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 51,
-        "name": "Gimlet",
-        "category": "*intenso, acido, freco*",
-        "ingredients": [
-            "50ml Ginebra",
-            "10ml Citrus Soul",
-            "15ml Z. Lima",
-            "15ml Sirope Simple"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Twist lima",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Gimlet.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 52,
-        "name": "Garibaldi",
-        "category": "*amargo-dulce, refrescante*",
-        "ingredients": [
-            "50ml Campari",
-            "Top Z. naranja"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Gajo naranja",
-        "method": "Añadir el campari  con hielo, el xumo de naranja si no es recien exprimido, agitarlo en coctelera antes de servir sobre el campari.",
-        "image": "./assets/Cocktail_Garibaldi.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 53,
-        "name": "Aviation",
-        "category": "*intenso, acido, notas verdes*",
-        "ingredients": [
-            "50ml Ginebra",
-            "25ml Z. limón",
-            "20ml Licor de marraschino",
-            "10ml Licor de violeta"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Cereza de marraschino",
-        "method": "Verter todos los ingredientes , hacer un agitado fuerte y corto.",
-        "image": "./assets/Cocktail_Aviation.webp",
-        "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 54,
-        "name": "Moscow mule",
-        "category": "*picante,acido, refrescante*",
-        "ingredients": [
-            "50ml Vodka",
-            "25ml Z. lima",
-            "Top Ginger beer",
-            "2dash Angostura"
-        ],
-        "glassware": "Vaso Genérico",
-        "garnish": "Menta y twist de lima",
-        "method": "Verter todos los ingredientes  y remover hasta homogenizar.",
-        "image": "./assets/Cocktail_Moscow_mule.webp",
+        "garnish": "Deshidratado residuos",
+        "method": "Directo en banana: colocar el bloque y añadir el bitter",
+        "image": "./assets/lovo-bar-madrid-50-best-bars-jupe-banane-1.webp",
         "video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
 ];

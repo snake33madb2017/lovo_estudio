@@ -91,6 +91,13 @@
                     <h3>Protocolo</h3>
                     <p>Manual de servicio Lovo</p>
                 </button>
+
+                <button class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, rgba(211,165,72,0.15) 0%, rgba(211,165,72,0.05) 100%); border-color: rgba(211,165,72,0.3);" onclick="app.navigate('tribu')">
+                    <i class="ph ph-mask-happy" style="color: var(--clr-primary);"></i>
+                    <h3>Carta Tribu Lovo</h3>
+                    <p>Cócteles de la tribu</p>
+                </button>
+
                 <button class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, rgba(230,57,70,0.15) 0%, rgba(230,57,70,0.05) 100%); border-color: rgba(230,57,70,0.3);" onclick="app.navigate('wines')">
                     <i class="ph ph-wine" style="color: #e63946;"></i>
                     <h3>Carta de Vinos</h3>
@@ -181,6 +188,245 @@
                             <li style="margin-bottom: 6px;"><strong style="color: #fff;">Sabor:</strong> Sabor con caractes sabroso y con un punto salino.</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- View: Tribu Lovo -->
+        <section id="view-tribu" class="view" style="padding: 20px; overflow-y: auto; padding-bottom: 100px; height: 100vh;">
+            <div class="view-header">
+                <h2>Carta Tribu Lovo</h2>
+            </div>
+            
+            <div class="wines-section" style="margin-top: 15px;">
+                <h3 style="color: var(--clr-primary); margin-bottom: 15px; font-size: 1.2rem; border-bottom: 1px solid rgba(211,165,72,0.3); padding-bottom: 5px;">Los Cócteles de la Tribu</h3>
+                <div class="wines-grid" style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 25px;">
+
+                    <!-- Bubi -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_bubi.webp" alt="Bubi" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Bubi</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 50ml Ron Arehucas Blanco, 25ml Licor Lemon grass, 15ml Licor de Platano, 5ml Cacao pico, 15ml King Sawa, 1dash Tintura Contriri, top Ginger Beer</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Rim sal de cacao por todo el vas</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> DIRECTO: añadimos todos los ingredientes al vaso y terminao con top de ginger beer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Manabi -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_manabi.webp" alt="Manabi" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Manabi</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 30ml Mix de Rones, 10ml Worthy Park, 10ml Ron Bumbu, 55ml Z. Piña, 45ml Z. Tomate de Arbol, 20ml Licor Cacahute, 10ml Sirope de Coco</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Espuma de Tomate de Arbol y Ají amarillo & polvo cacahuete</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> DIRECTO: añadimos todos los ingredientes al vaso, terminamos con el gasificado y colocamos espuma por encima &</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Inuit -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_inuit.webp" alt="Inuit" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Inuit</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 20ml Mix Gin, 30ml Licor Salmon & eneldo, 25ml King Sawa, 10ml S. Simple, 1dash Bitter Ruibarbo</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Gelatina acida y polvo de salmon</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Shake & Double Strain:: añadir todos los indredientes dentro de la coctelera y  agitar corto e intenso.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Maori -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Maori.webp" alt="Maori" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Maori</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 40ml Gin Matcha, 15ml Licor Lima Kaffir, 15ml Sirope Hoja higuera, 25ml Z. Lima, top Soda Higuera</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Aire Fresco herbal</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Shake & Double Strain:: añadir todos los indredientes dentro de la coctelera y  agitar corto e intenso.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Masai -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Masai.webp" alt="Masai" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Masai</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 25ml Bombay saphire, 50ml Vemouth Dry 1757 de Calabza, 25ml King Sawa, 15ml S. Calabaza, 15ml S. Simple, 15ml Hibiscus, 15ml Campari</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Pipeta en el Hielo</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Shake: Corto y ligero</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Indio Navajos -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Navajo.webp" alt="Indio Navajos" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Indio Navajos</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 50ml Bourbon a la Mantequilla, 20ml Licor de Tabaco, 15ml Licor de Maiz Azul, 10ml Licor de Cacao</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Tortilla de maiz azul</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Stir: verter todos los ingredientes en el mixing glass, remover, enfriar a punto optimo, servir</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Samurai -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Samurai.webp" alt="Samurai" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Samurai</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 54gr Mix Whisky, 20gr Licor de Pandam, 12,5gr Miso, 10gr Gallteta, 25gr Z. Limon, 20gr Sirope Alga Nori, 28gr Leche de Soja, 100ml soda higuera</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> ninguno</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Servicio de te delante del cliente con su repectiva jarra</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ngi -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_ngi.webp" alt="Ngi" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Ngi</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 40ml Brandy Fundador, 15ml Licor de Cacao, 70ml Ginnes, 10ml King Sawa, 10ml Sirope simple, 1 dash Bitter Cacao</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Espuma de Banana y plata comestible</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Directo:  Vaso rocks redondo, servir y terminar con espuma banana</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Boazu -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_boazu.webp" alt="Boazu" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Boazu</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 20ml Mix Ron, 20ml Everum, 50ml Cordial de Fresa, 15ml Pinot Charentes, 15ml Fino, 2dash Bitter Nuez</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Fresas encurtida</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Stir: agregar todos los ingredientes en la codctelera, havcer throw y servir.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tliish -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo_tliish.webp" alt="Tliish" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Tliish</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 45ml Mix Ron a la Nuez Moscada, 20ml Cordial pera Asada, 10ml King Sawa, 15ml Sirope Pera al Horno</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Residuo</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Stir: agregar todos los ingrediente en el mizing glass, remover y diluir a temperatura optima y servir.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Shunme -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Shunme.webp" alt="Shunme" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Shunme</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 10ml Laphroaig 10, 40ml Mezcal Union, 30ml Licor Herbal, 10ml Sirope Hierba Luisa, 5ml Humo, 25ml King Sawa, top Soda Higuera</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> ramillete verde(estragon)</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Directo:</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Enngerai -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo-bar-nordico-cocktail.webp" alt="Enngerai" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Enngerai</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 30ml Tequila 3 Generaciones, 20ml Mezcal Union, 10ml Humo, 20ml Sirope Mango, 35ml Z. Calamansi, 35ml Licor Mango Picante, 10ml Licor Melon Cantalupe</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> flores secas</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Directo: todos los ingredientes / hielo pile / remover homogeneamente terminar con mas hielo y flores</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Manuq -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_Nanuq.webp" alt="Manuq" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Manuq</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 10ml Mix Gin, 40ml Licor Salmon & Eneldo, 25ml King Sawa, 150ml Tonica Albahaca & Pepino, 10ml Voltaje</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Cupula hielo pile y Arandanos rojos</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Directo:    añadir hielo y todos los ingredientes, remover  / terminar cupula y azucar glass</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Honu -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo-bar-nordico-cocktail.webp" alt="Honu" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Honu</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 50ml Tequila Altos de Sisho Verde, 25ml Z. Lima, 20ml Sirope Hoja Higuera, 30ml Clara de Huevo</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Rim Cebollino y sal</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Shake: Estilo sour / todos los ingredientes en la coctelera, dry shake and shake.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tomate & Strawberry -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/Cocktail_TomatoStrawberry-scaled.webp" alt="Tomate & Strawberry" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Tomate & Strawberry</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 30 Mix Gin de Fresas, 10 Amontillado, 5 Martini Bitter, 35 Agua de Tomate, 10 Z. Lima, 15 Sirope Simple</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> </li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Shake: agitado corto e intenso y Servir doble colado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jupe Banane -->
+                    <div class="wine-card" style="background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(211,165,72,0.2); border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 15px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--clr-primary);"></div>
+                        <img src="./assets/lovo-bar-madrid-50-best-bars-jupe-banane-1.webp" alt="Jupe Banane" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <div>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 5px;">Jupe Banane</h4>
+                            <ul style="color: #ccc; font-size: 0.85rem; list-style-type: none; padding-left: 0; line-height: 1.4; margin: 0;">
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Ingredientes:</strong> 60ml Mix Vodka, 10ml Licor de Plátano, 25ml Zumo limón, 15ml Sirope simple, 100ml Yogurt fresa y platano, 5 gotas Bitter suze rojo</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Garnish:</strong> Deshidratado residuos</li>
+                                <li style="margin-bottom: 3px;"><strong style="color: var(--clr-primary);">Método:</strong> Directo en banana: colocar el bloque y añadir el bitter</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
